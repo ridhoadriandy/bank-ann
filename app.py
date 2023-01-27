@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 22 06:43:26 2020
-
-@author: paras
-"""
+import streamlit as st
+import streamlit.components.v1 as stc
+from PIL import Image
 
 from flask import Flask, jsonify, request
 import pandas as pd
