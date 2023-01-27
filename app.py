@@ -70,4 +70,4 @@ def predict():
     # return jsonify({'prediction': str(x)})
    
 if __name__ == '__main__':
-    app.run()
+    return flask.render_template('index.html')
