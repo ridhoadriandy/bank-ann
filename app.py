@@ -6,8 +6,10 @@ from flask import Flask, jsonify, request
 import pandas as pd
 import numpy as np
 import json
-from sklearn.externals import joblib 
+import joblib
+import sys
 
+sys.modules['sklearn.externals.joblib'] = joblib
 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.compose import ColumnTransformer
