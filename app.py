@@ -68,6 +68,3 @@ def predict():
     
     return flask.render_template('index.html', predicted_value="Customer Churn rate: {}%".format(str(x)))
     # return jsonify({'prediction': str(x)})
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
